@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--namespace应该为全限定名-->
+<mapper namespace="com.dyy.mybatis.mapper.MemoGroupMapper">
+
+
+    <insert id="insertMemoGroup">
+        insert into memo_group(name,created_time) values (#{name},#{creatTime})
+    </insert>
+    <select id="queryMemoGroup">
+        select * from memo_group
+    </select>
+</mapper>
